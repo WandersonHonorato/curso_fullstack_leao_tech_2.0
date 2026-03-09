@@ -11,6 +11,9 @@
         input {
             border-radius: 20px 20px 20px 20px; padding: 3px 3px 3px 3px;
         }
+        .textarea { border-radius: 15px;
+
+        }
     </style>
 </head>
 <body>
@@ -22,50 +25,47 @@
 
 <div class="main-forms">
         <label for="Nome">Nome:</label>
-    <input id="Nome" name="" type="text" placeholder="Ex: Wanderson" required>
+    <input id="Nome" name="Nome" type="text" placeholder="Ex: Wanderson" required>
     <br><br>
-        <label for="Email">Email:</label>
-    <input id="" name="" type="Email" placeholder="Ex: Wanderson@gmail.com" required>
+        <label for="email">E-mail:</label>
+    <input id="email" name="email" type="email" placeholder="Ex: Wanderson@gmail.com" required>
     <br><br>
 
-    <label for="">Cargo de Tecnologia</label>
-    <select name="Cargo de Tecnologia" id="cargo">
+        <label for="">Cargo de Tecnologia:</label>
+    <select name="Cargo de Tecnologia" id="cargo" >
     <option value="">--Pessoa Desenvolvedora--</option>
-    <option value="">Backend</option>
-    <option value="">Frontend</option>
-    <option value="">QA</option>
-    <option value="">DBA</option>
+    <option value="back">Backend</option>
+    <option value="front">Frontend</option>
+    <option value="qa">QA</option>
+    <option value="DBA">DBA</option>
     </select>
     <br><br>
 
  
-    <label for="Genero">Genero:</label><br>
+    <label for="">Genero:</label><br>
 
-    <input type="radio" name="Masculino" id="Genero" value="Genero">
-    <label for="Genero">Masculino</label>
-        
-    <input type="radio" name="Feminino" id="Genero" value="Genero">
-    <label for="Genero"> Feminino</label>
-        
-    <input type="radio" name="Outro" id="Genero" value="Genero">
-    <label for="Genero">Outro</label>
+        <label for="Genero">Masculino</label>
+    <input type="radio" name="Genero" id="m" value="m">
+        <label for="Genero"> Feminino</label>  
+    <input type="radio" name="genero" id="f" value="f">
+            <label for="Genero">Outro</label>
+    <input type="radio" name="genero" id="o" value="o">
     <br><br>
 
             <label for="Local">Unidade de interesse:</label><br>
-        <input type="checkbox" name="Fortaleza" id="Local" value="Local">
-        <label for="Local">Fortaleza</label>
-        
-        <input type="checkbox" name="Horizonte" id="Local" value="Local">
-        <label for="Local">Horizonte</label>
-        
-        <input type="checkbox" name="Eusébio" id="Local" value="Local">
-        <label for="Local">Eusébio</label>
-<br>
-<br>
-<label for="depoimento">Fale mais sobre você</label><br>
-        <textarea name="depoimento" id="depoimento" rows="5" cols="30" maxlength="300" required>
+        <input type="checkbox" name="unidade" id="fortaleza" value="fortaleza">
+             <label for="Local">Fortaleza</label>
+        <input type="checkbox" name="unidade" id="horizonte" value="horizonte">
+             <label for="Local">Horizonte</label>
+        <input type="checkbox" name="unidade" id="eusebio" value="eusebio">
+             <label for="Local">Eusébio</label>
+            <br><br>
 
+            <label for="depoimento">Fale mais sobre você:</label><br>
+        <textarea 
+        class="textarea" name="depoimento" id="depoimento" rows="5" cols="30" maxlength="300" required >
         </textarea>
+        
         <br><br>
         <input type="submit" value="Enviar">
 
