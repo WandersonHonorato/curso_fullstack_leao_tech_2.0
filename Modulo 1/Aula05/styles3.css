@@ -1,6 +1,7 @@
 body {
 background-color:#e6e6e6;
 font-family: sans-serif;
+margin: 20%;
 
 h1 {
 color: blue;
@@ -34,13 +35,13 @@ color: blue;
 
 .img-leao{
     border: 3px solid red;
-    padding: 4px auto;
+    padding: 6px 6px;
     margin: 10px auto;
     width: 300px;
 }
 
 .img-leao img{
-    width: 80%;
+    width: 95%;
 
 }
 
