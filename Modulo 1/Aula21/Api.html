@@ -16,9 +16,7 @@
 <button id="btncep" class="btn btn-secondary">Enviar</button>
 <input id="cep" type="text" placeholder="CEP"> -->
 
-
 </body>
-
 
 <div class="row ms-5 mt-5">
     <div class="col-12 ms-3">
@@ -42,7 +40,7 @@
     function buscarID() {
         let InputId = document.getElementById('product')
         let id = InputId.value
-        console.log(id)
+    
         let url = `https://fakestoreapi.com/products/${id}`
         
         fetch(url)
