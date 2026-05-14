@@ -14,6 +14,7 @@ const ListarUsuarios = () => {
                     {usuariosObj.map((usuario) => (
                         <div key={usuario.id} className='col-4'>
                             <CardUsuario usuario={usuario}/>
+                            
                         </div>
                     ))}
                 </div>

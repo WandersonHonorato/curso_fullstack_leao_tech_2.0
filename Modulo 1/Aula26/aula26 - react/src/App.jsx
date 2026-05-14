@@ -1,13 +1,22 @@
 import Home from '../src/pages/Home/Home'
 import Header from '../src/components/Header/Header'
+import Perfil from '../src/pages/Perfil/Perfil'
+import Footer from '../src/components/Footer/Footer'
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
 function App() {
   return (
     <>
-      <Header/>
-      <Home/>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/home ' element={<Home />} />
+          <Route path='/perfil' element={<Perfil />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer/>
     </>
   )
 }

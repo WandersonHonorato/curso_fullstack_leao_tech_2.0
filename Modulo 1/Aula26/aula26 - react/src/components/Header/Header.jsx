@@ -1,25 +1,27 @@
+import { Link } from "react-router-dom"
+
 function Header() {
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
                 <div className="container-fluid">
-                    <a className="navbar-brand " href="#">Zamigos</a>
+                    <Link className="navbar-brand " to="#">Zamigos</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">Home</a>
+                                <Link className="nav-link" aria-current="page" to="/home">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">Feed</a>
+                                <Link className="nav-link" aria-current="page" to="/feed">Feed</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Seguir</a>
+                                <Link className="nav-link" to="/seguir">Seguir</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" aria-disabled="true">Perfil</a>
+                                <Link className="nav-link" aria-disabled="true" to="/perfil">Perfil</Link>
                             </li>
                         </ul>
                     </div>
