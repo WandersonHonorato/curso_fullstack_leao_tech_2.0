@@ -1,34 +1,14 @@
-function Footer(){
-    return(
-        <>
-            <footer className="bg-dark text-light">
-                <div className="container">
-                    <div className="row p-4">
-                        <div className="col-4">
-                            <div>
-                            <p>texto pequeno</p>
-                            <p>texto pequeno</p>
-                            <p>texto pequeno</p>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <div>
-                            <p>texto pequeno</p>
-                            <p>texto pequeno</p>
-                            <p>texto pequeno</p>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <div>
-                            <p>texto pequeno</p>
-                            <p>texto pequeno</p>
-                            <p>texto pequeno</p>
-                            </div>
-                        </div>
+function Footer() {
+    return (
+        <footer className="bg-dark text-light mt-5 py-5">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12 text-center">
+                        <h5>Wanderson | Desenvolvedor Fullstack</h5>
                     </div>
                 </div>
-            </footer>
-        </>
+            </div>
+        </footer>
     )
 }
 
